@@ -28,12 +28,32 @@ function isPalindrome(word) {
 if (require.main === module) {
   // add your own custom tests in here
   console.log("Expecting: true");
+  console.log("=>", isPalindrome("level"));
+
+  console.log("");
+
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("deified"));
+
+  console.log("");
+
+  console.log("Expecting: true");
   console.log("=>", isPalindrome("racecar"));
 
   console.log("");
 
   console.log("Expecting: false");
-  console.log("=>", isPalindrome("robot"));
+  console.log("=>", isPalindrome("hello"));
+
+  console.log("");
+
+  console.log("Expecting: false");
+  console.log("=>", isPalindrome("computer"));
+
+  console.log("");
+
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("radar"));
 }
 
 module.exports = isPalindrome;
